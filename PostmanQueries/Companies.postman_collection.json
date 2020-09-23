@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "32394ba4-8000-408d-8b20-366b8ece8c46",
+		"name": "Companies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"BelAZ30\",\r\n    \"website\": \"Belaz30.by\",\r\n    \"description\": \"One in three dump trucks produced globally is manufactured by Belarusian Autoworks (BelAZ trademark).\",\r\n    \"createDate\": \"1944-06-17T00:00:00\",\r\n    \"address\": {\r\n        \"street\": \"Asanalieva lane 16\",\r\n        \"city\": \"Minsk\",\r\n        \"zipCode\": 220403,\r\n        \"country\": \"Belarus\"\r\n    },\r\n    \"certificates\": [\r\n    {\"Number\": 18001 },\r\n    { \"Number\" : 3333 },\r\n    { \"Number\": 6723  }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:58674/Companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58674",
+					"path": [
+						"Companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get (int id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:58674/Companies/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58674",
+					"path": [
+						"Companies",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:58674/Companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "58674",
+					"path": [
+						"Companies"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "07668c91-0448-4f91-a144-6d59e9ae6307",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b284fa41-a6ee-4961-9137-96a69725bb78",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
